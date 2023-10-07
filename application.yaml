@@ -16,7 +16,7 @@ spec:
 
   syncPolicy:
     syncOptions:
-    - CreateNamespace=true
+    - CreateNamespace=true  # Create namespace if doesn't exist
     automated:
-      selfHeal: true
-      prune: true
+      selfHeal: true  # To sync the changes if live cluster is manually updated, by default = false.
+      prune: true # To sync the changes if resources are deleted at source git, by default = false.

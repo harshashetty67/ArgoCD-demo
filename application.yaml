@@ -12,7 +12,9 @@ spec:
   destination: 
     # K8s API server url => Internal Service of Kubernetes since ArgoCD is part of the cluster it can access this service.
     server: https://kubernetes.default.svc
-    namespace: testapp
+    namespace: 
+      - testapp
+      - webapp
 
   # For detailed info on sync config : https://argo-cd.readthedocs.io/en/stable/user-guide/application-specification/
   syncPolicy:

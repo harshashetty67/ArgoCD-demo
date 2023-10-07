@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: webapp
+  namespace: webapp
 spec:
   selector:
     matchLabels:
@@ -10,7 +11,7 @@ spec:
   template:
     metadata:
       labels:
-        app: testpp
+        app: webapp
     spec:
       containers:
       - name: webapp

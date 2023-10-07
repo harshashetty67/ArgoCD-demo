@@ -14,7 +14,6 @@ spec:
     server: https://kubernetes.default.svc
     namespace: 
       - testapp
-      - webapp
 
   # For detailed info on sync config : https://argo-cd.readthedocs.io/en/stable/user-guide/application-specification/
   syncPolicy:
